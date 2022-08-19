@@ -1,0 +1,124 @@
+:root {
+	--themeColor: #ffffff;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--themeColor);
+}
+
+* {
+	/* outline: 1px solid red; */
+	transition: background-color 1s ease-out;
+}
+
+.main-container {
+	background-color: white;
+	padding: 3rem 1rem;
+	border-radius: 3px;
+	max-width: 40vw;
+}
+
+blockquote {
+	font-size: 2rem;
+	margin: 0;
+	padding: 2rem 0 2rem 4.5rem;
+	color: var(--themeColor);
+	position: relative;
+	transition: all 1s ease-out;
+}
+
+.quoteBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	height: 100%;
+}
+
+.author {
+	max-width: fit-content;
+	/* padding: 0.5rem 0rem; */
+	margin: 0 4rem 2rem 0;
+	font-size: 1.3rem;
+	color: var(--themeColor);
+}
+
+.quoteLeft {
+	font-size: 3rem;
+	position: absolute;
+	inset: 1rem 0 0 0.5rem;
+}
+
+button {
+	background: none;
+	color: black;
+	border: none;
+	border-radius: 0;
+	padding: 0.8rem 1.5rem;
+	font-size: 1rem;
+	cursor: pointer;
+	align-self: flex-end;
+	background-color: var(--themeColor);
+	color: white;
+	/* margin-right: 1rem; */
+	border-radius: 5px;
+	height: 100%;
+	outline: none;
+	transition: opacity 0.2s ease-out;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.button-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 1.5rem;
+	height: 3rem;
+	width: 100%;
+}
+
+.twitter-icon,
+.github-icon {
+	width: 3rem;
+	height: 3rem;
+	color: var(--themeColor);
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	gap: 0.5rem;
+}
+
+.icon {
+	transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+.icon:hover {
+	transform: translateY(-3px);
+	opacity: 0.8;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
