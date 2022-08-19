@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+	// Disabled Strict Mode, because it runs the useEffect hook twice
 	// <React.StrictMode>
 	<App />
 	// </React.StrictMode>
